@@ -59,8 +59,206 @@
 
 </head>
 
-<!--this tag for pure javascript: <body onload="ready()"> -->
 <body>
+
+
+<!-- banner -->
+  <div class="banner">
+    <div class="container">
+      <div class="banner-main">
+        <div class="banner-main1">
+          <div class="logo animated wow slideInLeft" data-wow-delay=".5s">
+            <h1><a href="index.html">田 集<span>梨仔園</span></a></h1>
+          </div>
+          <div class="search animated wow slideInLeft" data-wow-delay=".7s">
+            <form>
+              <input type="text" value="搜尋..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search Here...';}" required="">
+              <input type="submit" value=" ">
+              <div class="clearfix"> </div>
+            </form>
+          </div>
+          <div class="header-right">
+            <div class="shy-menu">
+              <a class="shy-menu-hamburger">
+                <span class="layer top"></span>
+                <span class="layer mid"></span>
+                <span class="layer btm"></span>
+              </a>
+              <div class="shy-menu-panel">
+                <nav class="menu menu--horatio">
+                  <ul class="menu__list">
+                    <li class="menu__item menu__item--current"><a href="index.html" class="menu__link">首頁</a></li>
+                    <li class="menu__item"><a href="about.html" class="menu__link">關於我們</a></li> 
+                    <li class="menu__item"><a href="short-codes.html" class="menu__link">梨仔品種</a></li> 
+                    <li class="menu__item"><a href="news.html" class="menu__link">梨園話題</a></li>
+                    <li class="menu__item"><a href="gallery.html" class="menu__link">Gallery</a></li> 
+                    <li class="menu__item"><a href="contact.html" class="menu__link">聯絡我們</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+            <div class="menu open">
+              <a class="hamburger">
+              <span class="layer top"></span>
+              <span class="layer mid"></span>
+              <span class="layer btm"></span>
+              </a>
+            </div>
+            <script>
+              $(function() {
+                
+                initDropDowns($("div.shy-menu"));
+
+              });
+
+              function initDropDowns(allMenus) {
+
+                allMenus.children(".shy-menu-hamburger").on("click", function() {
+                  
+                  var thisTrigger = jQuery(this),
+                    thisMenu = thisTrigger.parent(),
+                    thisPanel = thisTrigger.next();
+
+                  if (thisMenu.hasClass("is-open")) {
+
+                    thisMenu.removeClass("is-open");
+
+                  } else {      
+                    
+                    allMenus.removeClass("is-open");  
+                    thisMenu.addClass("is-open");
+                    thisPanel.on("click", function(e) {
+                      e.stopPropagation();
+                    });
+                  }
+                  
+                  return false;
+                });
+              }
+            </script>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="flexslider-info animated wow zoomIn" data-wow-delay=".5s">
+          <section class="slider">
+            <div class="flexslider">
+              <ul class="slides">
+                <li>
+                  <div class="banner-info">
+                    <h4>田 集</h4>
+                    <p>歡迎光臨<span>梨仔園</span></p>
+                  </div>
+                </li>
+                <li>
+                  <div class="banner-info">
+                    <h4>田 集</h4>
+                    <p>愛吃梨仔<span> 甜、脆、多汁，充滿梨子香氣</span></p>
+                  </div>
+                </li>
+                <li>
+                  <div class="banner-info">
+                    <h4>田 集</h4>
+                    <p>認識犁仔<span>一起來東勢梨之鄉走走...</span></p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- banner -->
+
+<!-- banner-bottom -->
+  <div class="banner-bottom">
+    <div class="container">
+      <h3 class="animated wow zoomIn" data-wow-delay=".5s">welcome to<span>sheep farm</span></h3>
+      <div class="banner-bottom-grids">
+        <div class="banner-bottom-grid">
+          <div class="col-md-4 banner-bottom-grid-left animated wow slideInLeft" data-wow-delay=".5s">
+            <img src="images/1.jpg" alt=" " class="img-responsive" />
+            <div class="banner-bottom-grid-left-pos">
+              <div class="banner-bottom-grid-left-pos1">
+                <h4>voluptates andae <span>sint et molestiae</span> non recusandae</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 banner-bottom-grid-right animated wow slideInRight" data-wow-delay=".5s">
+            <h4>qui blanditiis praesentium voluptatum deleniti</h4>
+            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
+              saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. 
+              Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
+              voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
+              repellat.</p>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title asd">
+                <a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i><label class="horse1">assumenda est cliche repreh</label>
+                </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body panel_text">
+                <div class="scrollbar" id="style-2">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus 
+                  terry richardson ad squid. 3 wolf moon officia aute, non cupidatat 
+                  skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis 
+                  suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis 
+                  autem vel eum iure reprehenderit qui in ea voluptate velit esse quam 
+                  nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo 
+                  voluptas nulla pariatur
+                  Quis 
+                  autem vel eum iure reprehenderit qui in ea voluptate velit esse quam 
+                  nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo 
+                  voluptas nulla pariatur
+                </div>
+                </div>
+              </div>
+              </div>
+              <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title asd">
+                <a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i><label class="horse2">Itaque earum rerum</label>
+                </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                 <div class="panel-body panel_text">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                </div>
+              </div>
+              </div>
+              <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title asd">
+                <a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i><label class="horse3">autem accusamus terry richa</label>
+                </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                 <div class="panel-body panel_text">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- //banner-bottom -->
+
+
+
   <div class="navbar navbar-inverse navbar-fixed-top" >
     <div class="container">
       <div class="navbar-header">
