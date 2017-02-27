@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"> <!--HTML5 網頁編碼宣告 --> 
-  <meta http-equiv="x-ua-compatible" content="IE=edge" >  <!--IE瀏覽器相容版本-->
-  <meta name="viewport" content="width=device-width, initial-scale=1">  <!--行動裝置支援, 不讓使用者縮放-->
+  <title>台灣梨仔</title>
+  <!-- for-mobile-apps -->
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+  <script type="application/x-javascript"> 
+    addEventListener("load", function() { 
+      setTimeout(hideURLbar, 0); 
+    }, false);
 
-  <title>Document</title>
+    function hideURLbar() {
+      window.scrollTo(0,1); 
+    } 
+  </script> 
   
-  <link rel="stylesheet" type="text/css" href="library/bootstrap-3.3.7-dist/css/bootstrap.css" />
-  <link rel="stylesheet" type="text/css" href="library/font-awesome-4.7.0/css/font-awesome.css" />
-  <link rel="stylesheet" type="text/css" href="library/assest/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="library/bootstrap-3.3.7-dist/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="library/font-awesome-4.7.0/css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="library/animate/animate.css" />  <!-- //animation-effect -->
+  <link rel="stylesheet" href="library/assest/css/flexslider.css" type="text/css" media="screen" />  <!--FlexSlider--> 
+  <link href='//fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" media="all" href="library/assest/css/main.css" />
 
   <script src="library/jQuery-3.1.1/jquery-3.1.1.js"></script>
+  <script src="library/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+  <script src="library/wow/wow.min.js"></script>  <!-- //animation-effect -->
+  <script defer src="library/assest/js/jquery.flexslider.js"></script>  <!--FlexSlider-->
+  <!-- smoth-scrolling -->
+  <script src="library/assest/js/move-top.js"></script>
+  <script src="library/assest/js/easing.js"></script>
 
-  <script src="library/bootstrap-3.3.7-dist/js/bootstrap.js"/>
+  <script>                  
+    new WOW().init();             
+  </script>
 
-    //pure javascript
-    //function ready() {
-    //  var element = document.getElementById("header1");
-    //  element.innerHTML = "HEADER 1已改為表頭1";     
-    //}
-
-    //jQuery
-    //$( document ).ready(function() {
-    $(function() {
-      $("#header2").html('HEADER 2已改為表頭2 jquery').css('color', 'green');
-      $(document ).on('click', '#button', function(event) {
-        var to_change_text = $('#textbox').val();
-        $(".apple").html(to_change_text).css('color', 'red');
-        $("#textbox").val('');
+  <script>
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider) {
+          $('body').removeClass('loading');
+        }
       });
     });
   </script>
+
+  <script>
+    jQuery(document).ready(function($) {
+      $(".scroll").click(function(event) {   
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+    });
+  </script>
+
 </head>
 
 <!--this tag for pure javascript: <body onload="ready()"> -->

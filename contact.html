@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>台灣梨仔</title>
+  <!-- for-mobile-apps -->
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+  <script type="application/x-javascript"> 
+    addEventListener("load", function() { 
+      setTimeout(hideURLbar, 0); 
+    }, false);
+
+    function hideURLbar() {
+      window.scrollTo(0,1); 
+    } 
+  </script> 
+  
+  <link rel="stylesheet" type="text/css" media="all" href="library/bootstrap-3.3.7-dist/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="library/font-awesome-4.7.0/css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="library/animate/animate.css" />  <!-- //animation-effect --> 
+  <link rel="stylesheet" type="text/css" media="all" href="library/assest/css/main.css" />
+
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nixie+One" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" />
+
+  <script src="library/jQuery-3.1.1/jquery-3.1.1.js"></script>
+  <script src="library/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+  <script src="library/wow/wow.min.js"></script>  <!-- //animation-effect -->
+  <script>                  
+    new WOW().init();             
+  </script>
+<!-- //animation-effect -->
+<!-- start-smoth-scrolling -->
+<script src="library/assest/js/move-top.js"></script>
+<script src="library/assest/js/easing.js"></script>
+<script>	
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+</head>
+	
+<body>
+	
+<!-- banner -->
+	<div class="banner1">
+		<div class="container">
+			<div class="banner-main">
+				<div class="banner-main1">
+					<div class="logo animated wow slideInLeft" data-wow-delay=".5s">
+						<h1><a href="index.html">田 集<span>梨仔園</span></a></h1>
+					</div>
+					<div class="search animated wow slideInLeft" data-wow-delay=".7s">
+						<form>
+							<input type="text" value="搜尋..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '搜尋...';}" required="">
+							<input type="submit" value=" ">
+							<div class="clearfix"> </div>
+						</form>
+					</div>
+					<div class="header-right">
+						<div class="shy-menu">
+							<a class="shy-menu-hamburger">
+								<span class="layer top"></span>
+								<span class="layer mid"></span>
+								<span class="layer btm"></span>
+							</a>
+							<div class="shy-menu-panel">
+								<nav class="menu menu--horatio">
+									<ul class="menu__list">
+										<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+										<li class="menu__item"><a href="about.html" class="menu__link">About</a></li> 
+										<li class="menu__item"><a href="short-codes.html" class="menu__link">Short Codes</a></li> 
+										<li class="menu__item"><a href="news.html" class="menu__link">News</a></li>
+										<li class="menu__item"><a href="gallery.html" class="menu__link">Gallery</a></li> 
+										<li class="menu__item menu__item--current"><a href="contact.html" class="menu__link">Contact</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="menu open">
+						  <a class="hamburger">
+							<span class="layer top"></span>
+							<span class="layer mid"></span>
+							<span class="layer btm"></span>
+						  </a>
+						</div>
+						<script>
+							$(function() {								
+								initDropDowns($("div.shy-menu"));
+							});
+
+							function initDropDowns(allMenus) {
+								allMenus.children(".shy-menu-hamburger").on("click", function() {
+									
+									var thisTrigger = jQuery(this),
+										thisMenu = thisTrigger.parent(),
+										thisPanel = thisTrigger.next();
+
+									if (thisMenu.hasClass("is-open")) {
+
+										thisMenu.removeClass("is-open");
+
+									} else {			
+										
+										allMenus.removeClass("is-open");	
+										thisMenu.addClass("is-open");
+										thisPanel.on("click", function(e) {
+											e.stopPropagation();
+										});
+									}
+									
+									return false;
+								});
+							}
+						</script>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="banner1-info animated wow zoomIn" data-wow-delay=".5s">
+					<h3>東勢，大埔客家文化的重鎮，也是著名的水果之鄉，盛產梨子、甜柿、柑橘、葡萄等果樹類作物---</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- banner -->
+<!-- contact -->
+	<div class="contact-sub">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14546.920848445136!2d120.79187440147689!3d24.28615200783858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1488122954444" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<!--
+		<iframe width="400" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src=http://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=台北市新生南路三段90號&z=14&output=embed&t=p></iframe>
+		-->
+		<!--
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387142.84008838347!2d-74.25818880297903!3d40.705831640339994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1458989391399" frameborder="0" style="border:0" allowfullscreen></iframe>
+		-->
+		<div class="contact">
+			<div class="container">
+				<h3 class="animated wow zoomIn" data-wow-delay=".5s">梨仔園<span>訪客留言</span></h3>
+				<div class="contact-grids">
+					<div class="col-md-4 contact-grid-left animated wow slideInLeft" data-wow-delay=".5s">
+						<h4>聯絡資訊...</h4>
+						<ul>
+							<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>台中市<span>東勢區東蘭路...</span></li>
+							<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
+							<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 890</li>
+						</ul>
+					</div>
+					<div class="col-md-8 contact-grid-right animated wow slideInRight" data-wow-delay=".5s">
+						<form>
+							<input type="text" value="姓名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+							<input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+							<input type="text" value="連絡電話" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telephone';}" required="">
+							<textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '你的留言...';}" required="">Message...</textarea>
+							<input type="submit" value="Submit">
+							<input type="reset" value="Clear">
+
+						</form>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- //contact -->
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".5s">
+				<h2><a href="index.html">田 集<span>梨仔園</span></a></h2>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+					nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+					deserunt mollit anim id est laborum.</p>
+				<ul class="social">
+					<li>Share on:</li>
+					<li><a class="social-linkedin" href="#">
+						<i></i>
+						<div class="tooltip"><span>Facebook</span></div>
+						</a></li>
+					<li><a class="social-twitter" href="#">
+						<i></i>
+						<div class="tooltip"><span>Twitter</span></div>
+						</a></li>
+					<li><a class="social-google" href="#">
+						<i></i>
+						<div class="tooltip"><span>Google+</span></div>
+						</a></li>
+					<li><a class="social-facebook" href="#">
+						<i></i>
+						<div class="tooltip"><span>Pinterest</span></div>
+						</a></li>
+					<li><a class="social-instagram" href="#">
+						<i></i>
+						<div class="tooltip"><span>Instagram</span></div>
+						</a></li>
+				</ul>
+				<div class="newsletter">
+					<form>
+						<input type="email" value="Email..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email...';}" required="">
+						<input type="submit" value="Subscribe">
+					</form>
+				</div>
+			</div>
+			<div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".6s">
+				<h3>instagram posts</h3>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/6.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/7.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/8.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/10.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/11.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/12.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/7.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/8.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/10.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".7s">
+				<h3>Contact Info</h3>
+				<ul class="footer-address">
+					<li><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 738 Diamond Road, New York City, USA.</li>
+					<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a></li>
+					<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +7683 928 829</li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="footer-copy">
+		<div class="container">
+			<p class="animated wow slideInLeft" data-wow-delay=".5s">© 2017 田集 梨仔園, 版權所有 | All rights reserved</p>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>
